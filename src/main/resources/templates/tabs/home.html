@@ -1,0 +1,42 @@
+<!doctype html>
+<!-- O layout base dessa pagina fica em layout/layout.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout/_layout">
+<head>
+
+<title>SmartGrid - Consumo em Tempo Real</title>
+<!-- Aqui vc coloca os css que só essa pagina precisa, os comuns ficam no layout exemplo:-->
+<link rel="stylesheet" th:href="@{http://www.w3schools.com/lib/w3.css}"></link>
+	<!-- amCharts javascript sources -->
+	<script type="text/javascript" src="/js/amcharts.js"></script>
+	<script type="text/javascript" src="/js/gauge.js"></script>
+	<script type="text/javascript" src="/js/home.js"></script>
+</head>
+
+<section layout:fragment="content">
+	<!-- Conteudo da pagina vai aqui -->
+	<style type="text/css">#home{background-color: #215491;};</style>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="row">
+					<div class="col-xs-6" style="border-right: 1px solid #000">
+						<div id="chartdiv" class="col-xs-12" style=" min-height: 300px; background-color: #FFFFFF; margin-left:5px;" ></div>
+						<div class="text-center">Essa página atualiza a cada 2 segundos</div>
+					</div>
+					<div class="col-xs-6">
+						<h2 id="wattsBig" class="text-center"></h2>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- Conteudo da pagina termina aqui -->
+
+<!-- Aqui vc coloca os SCRIPT que só essa pagina precisa, os comuns ficam no layout -->
+
+</section>
+</html>

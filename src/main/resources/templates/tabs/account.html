@@ -1,0 +1,36 @@
+<!doctype html>
+<!-- O layout base dessa pagina fica em layout/layout.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout/_layout">
+<head>
+
+<title>SmartGrid - Dados do Usuário</title>
+<!-- Aqui vc coloca os css que só essa pagina precisa, os comuns ficam no layout exemplo:-->
+<link rel="stylesheet" th:href="@{http://www.w3schools.com/lib/w3.css}"></link>
+
+</head>
+
+<section layout:fragment="content">
+	<!-- Conteudo da pagina vai aqui -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1">
+				<table class="table">
+					<tr>
+						<td>Endereço</td>
+						<td>Cadastrar</td>
+						<td>Visualizar</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<!-- Conteudo da pagina termina aqui -->
+
+<!-- Aqui vc coloca os SCRIPT que só essa pagina precisa, os comuns ficam no layout -->
+
+</section>
+</html>

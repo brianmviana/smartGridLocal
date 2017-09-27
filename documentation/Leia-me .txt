@@ -1,0 +1,19 @@
+Link sistema online:
+https://smartgrid-web.herokuapp.com/login
+
+Caminho dos diagramas:
+
+- Diagramas de classe
+  br/qxd/smartgrid/api 
+  br/qxd/smartgrid/model
+  br/qxd/smartgrid/repository
+  br/qxd/smartgrid/service
+
+- Diagramas de sequencia
+  br/qxd/smartgrid/view
+
+
+Iniciar projeto
+Utiliza o marven
+ run java aplication -> br.qxd.smartgrid/SmartGridApplication
+
